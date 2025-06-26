@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'poppins', sans-serif;
+    /* height: 100vh; */
+}
+html {
+    font-size: 62.5%;
+    /* 10px / 16px = 62.5
+    1rem = 10px
+     */
+}
+/* UNIVERSAL STYLES */
+ul {
+    padding: 0;
+    list-style: none;
+}
+a, h6, h3, h1, p {
+    color: #010313;
+}
+h6 {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+}
+section {
+    position: relative;
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 16rem;
+    min-height: fit-content;
+}
+.arrow {
+    position: absolute;
+    right: -7rem;
+    padding: 0.1rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+.btn {
+    display: flex;
+    column-gap: 0.5rem;
+}
+.button {
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    transition: 0.5s;
+    background-color: white;
+}
+.icons {
+    max-width: 30px;
+    width: 100%;
+}
+.top-title {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* NAV-BAR SECTION */
+nav {
+    display: flex;
+    height: 17vh;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div a {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-section {
+    display: flex;
+    gap: 9rem;
+   
+}
+.nav-section li a:hover {
+     text-decoration: underline;
+     text-underline-offset: 0.3rem;
+     color: #626f79;
+     transition: 0.5s;
+}
+
+/* HERO SECTION */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.profile--pic1 {
+   padding-right: 2rem;
+}
+.profile-pic1 {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.title {
+    text-align: center;
+}
+.btn-1 {
+    margin-top: 2rem;
+}
+.icon1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    margin-top: 1rem;
+}
+.btn1:hover {
+    color: white;
+    background-color: #010313;
+    box-shadow: 0 0 1 black;
+    transform: scale(3rem);
+}
+.btn1:active {
+    background-color: white;
+}
+
+/* THE ABOUT ME SECTION */
+.about-container {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.profile-pic2 {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 20px;
+}
+.about-card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.card-container {
+    display: flex;
+    column-gap: 3.2rem;
+    margin-bottom: 3.2rem;
+    margin-top: 3.2rem;
+}
+.paragragh {
+   margin-top: 2rem;
+}
+
+/* THE EXPERIENCE SECTION */
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+    justify-items: center;
+    align-items: center; */
+}
+.experience-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 2rem;
+}
+.experience-card h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.sect {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+/* THE PROJECT SECTION */
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* column-gap: 2rem; */
+    margin-top: 1rem;
+}
+.project-pic {
+    width: 15rem;
+    height: 14rem;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 1rem;
+    width: 20rem;
+    /* height: 20rem; */
+    border-radius: 10px;
+}
+.btn-2 {
+    margin-top: 3rem;
+}
+.project-card p:nth-child(2) {
+    margin-top: 1rem;
+}
+.btn2:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 0 black;
+    transform: scale(0.15rem);
+}
+.btn2.active {
+    color: grey;
+}
+
+/* THE CONTACT ME SECTION */
+#contact-me {
+    height: 50vh;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.big-button {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    transition: 0.5s;
+}
+.big-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* FOOTER */
+.social-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.bottom {
+    margin-bottom: 2rem;
+    text-align: center;
+}

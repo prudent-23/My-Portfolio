@@ -1,0 +1,106 @@
+/* MAX - WIDTH RAGE 1280px - 1024px */
+@media(max-width:71.5rem) {
+    /* 1144px / 16px = 71.5rem */
+    html {
+        font-size: 56.25%;
+    }
+    .about-container {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+   .hero-container {
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-evenly;
+   }
+   .hero-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   section {
+    padding-top: 2vh;
+    height: 80vh;
+    margin: 0 14rem;
+   }
+    
+   
+}
+
+/* MAX - WIDTH RANGE 1024px - 768px */
+@media(max-width:53.875rem) {
+    /* 862px / 16px = 53.875rem */
+    html {
+       font-size:56.25% 
+        /*9px / 16px = 56.25%  */
+    }
+    .experience-container {
+        flex-direction: column;
+        gap: 2rem;
+        /* flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        flex: 1; */
+    }
+
+    
+}
+@media(max-width:57.45rem) {
+    /* 919px / 16px = 57.45 */
+    .project-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    #contact-me {
+        margin-top: 20rem;
+    }
+}
+
+/* MAX - WIDTH RANGE 768px - 576px */
+@media(max-width:36.06rem) {
+    /* 577px / 16px = 36.06rem */
+    html {
+        font-size: 50%;
+        /* 8px / 16px = 50% */
+    }
+   #contact-me {
+    height: 30vh;
+   }
+   .nav-section {
+    gap: 5rem;
+   }
+}
+
+/* MAX - WIDTH RANGE < 567px */
+@media(max-width:25.75rem) {
+    /* 412px / 16px = 25.75rem */
+    html {
+        font-size: 43.75%;
+        /* 7px / 16px = 43.75 */
+    }
+    #contact-me {
+        height: 30vh;
+    }
+    .nav-section {
+    gap: 3rem;
+   }
+}
+@media(max-width:30.94rem) {
+    /* 495px /16px = 30.94rem */
+    html {
+        font-size: 31.25%;
+        /* 5px / 16px = 31.25% */
+    }
+    .section-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .nav-section {
+    gap: 2rem;
+   }
+   
+}
